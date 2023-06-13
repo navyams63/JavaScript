@@ -27,17 +27,3 @@ var isAdmin = false;  //Booloean
     };
     document.write(`<p>user = ${typeof(user)}</p>`);
     document.write(`<p>user = ${user}</p>`);
-
-    //function block = behaviours
-    // function name (params)
-    function defaultFun(){
-        document.write(`<p>This is DEFAULT FUNCTION.</p>`)
-    }
-    defaultFun();
-
-    function parameterFun(name, email){
-        document.write(`<p>This is PARAMETERIZED FUNCTION.</p>`);
-        document.write(`<p>First Parameter is : ${name}</p>`);
-        document.write(`<p>Second Parameter is : ${email}</p>`);
-    }
-    parameterFun("JS","js@gmail.com")
