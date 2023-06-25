@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Array using Constructor</h1>
+    </center>
+    <hr>
+    <script>
+        //ref / instance => x
+        var x = new Array();
+
+        //assign the value
+        x[0]="Ram";
+        x[1]="Sham";
+        x[2]="Sundar";
+        x[3]="Bahugun";
+
+        document.write(`<h3> ${ x }</h3>`)
+        document.write(`<h3> ${ x [3]}</h3>`)
+
+        /*
+            array.forEach(function(param){
+                //param => index
+
+            })
+        */
+
+        x.forEach(function(item){
+            document.write(`<h3> ${item}</h3>`)
+        })
+    </script>
+</body>
+</html>

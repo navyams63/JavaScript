@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center><h1>DataType Conversion</h1></center>
+    <hr>
+
+    <script> 
+        let str = "123";
+        document.write(typeof(str) + "<br>");  /*Outputs:string*/
+        let num = Number(str); /*Becomes a number 123*/
+        document.write(tyoeof(num) + "<br>")
+
+        var number1 = Number("10.5");
+        document.write(typeof(number1)+"<br>") /*Output:NUmber*/
+
+
+        var x = "123.343"
+        var y = '1245.6425879'
+        var z = "apple"
+
+        document.write(`<h3> X Data Type is = ${typeof(x)} </h3>`)
+        document.write(`<h3> Y Data Type is = ${typeof(y)} </h3>`)
+        document.write(`<h3> Z Data Type is = ${typeof(z)} </h3>`)
+
+        var a = Number(x);  /* convert to any data type into number */
+        document.write(`<h3> NUmber = ${a} </h3>`)
+
+        var a1 = parseInt(x);  //int value
+        document.write(`<h3> int = ${a1}</h3>`)
+
+        var a2 = parseFloat(x) //Decimal value
+        var a3 = parseFloat(y)
+
+        let yy = 1245.6770578654
+        document.write(`<h3> YY variable value is = ${ yy }</h3>`)
+        document.write(`<h3> YY variable value is = ${ yy.tofixed() }</h3>`)
+        document.write(`<h3> YY variable value is = ${ yy.tofixed(1) }</h3>`)
+        document.write(`<h3> YY variable value is = ${ yy.tofixed(2) }</h3>`)
+        document.write(`<h3> YY variable value is = ${ yy.tofixed(3) }</h3>`)
+        document.write(`<h3> YY variable value is = ${ yy.tofixed(4) }</h3>`)
+
+        NUmber(true)  //returns 1
+        NUmber(false)  //returns 0
+        Number(null)  //returns 0
+        Number("123")  //returns 123
+        Number(" ")   //returns 0
+        Number("")   //returns 0
+        Number("123e-1")  //returns 12.3
+        Number("0xFF")  //returns 255 (hexadecimal representation)
+        Number("undefined")  //returns NAN ->Not A NUmber
+        NUmber("null")  //returns NAN
+        Number("Hello World")  //returns NAN
+    </script>
+</body>
+</html>

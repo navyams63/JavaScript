@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <center>
+        <h1>Function</h1>
+    </center>
+    <hr>
+
+    <!---ECMA SCRIPT CODE-->
+    <h1>ECMA SCRIPT CODE</h1>
+    <script>
+        document.write("<h1>Function Defining..! (Local Function)</h1>")
+        function sum(a,b){
+            return a+ b;
+        }
+        document.write(`<h3> sum = ${sum(33,34)}</h3>`)
+
+        document.write("<h1>Function Expressions..!</h1>")
+        let fullName =  function(firstName, lastName){
+            return firstName + lastName;
+        }
+        document.write(`<h3> fullName = ${ fullName("HTML","CSS")}</h3>`)
+
+        document.write("<h3>Arrow Function..!</h3>")
+        let JS = () =>{
+            document.write("This is arrow function..!")
+        }
+        JS();
+
+        let rem = (a,b) => {
+            return a % b;
+        }
+        document.write(`<h3> rem = ${rem(33,4)}</h3>`)
+    </script>
+</body>
+</html>
