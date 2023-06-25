@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BASICS</title>
+</head>
+<body>
+    <h1>marks = 70 - 100(A) 50 - 70(B) 35-50(C) ==35(D) , FAIL </h1>
+
+    <script>
+        var marks = 56;
+
+        if(marks >=70 || marks <=100){
+            document.write(`<h2> First condition is false and Second condition is true </h2>`)
+        }else if(marks >=50 || marks<70){
+            document.write(`<h2>First and second conditions are true</h2>`)
+        }else if(marks > 35 || marks < 50){
+            document.write(`<h2> First and second conditions are true </h2>`)
+        }else if(marks == 35){
+            document.write(`<h2>First condition is false </h2>`)
+        }else{
+            document.write(`<h2>Invalid</h2>`)
+        }
+    </script>
+</body>
+</html>

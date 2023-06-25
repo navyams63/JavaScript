@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-BAsics</title>
+</head>
+<body>
+    <h3>Conditional statements</h3>
+    <script>
+        var x = prompt("ENter the VAlue?");
+        //Window objects / BOM >browser object modal
+
+        document.write(`<h1>Type of Method ${typeof(x)}</h1>`);
+
+        var a = Number(x);
+        //used to convert the any type into NUmber
+
+        if(a === 123){
+            document.write(`<h1> ${a} is equal to 123 </h1>`)
+            //DOM 
+        }else if(a>123){
+            document.write(`<h1> ${a} is greater than 123</h1>`)
+        }else if(a<123){
+            document.write(`<h1> ${a} is lesser than 123 </h1>`)
+        }else {
+            document.write(`<h1>Check your input</h1>`)
+            //other than number
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+        #txt{
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>onmousewheel() and onscroll() </h1>
+    </center>
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quasi quae enim impedit ad eius explicabo temporibus voluptatum porro et vitae, vero id possimus pariatur eligendi atque ipsa labore dolor
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, illum? Expedita ipsam veritatis nihil error. Quam eligendi iusto hic enim quidem esse, asperiores amet, quaerat dignissimos quo perspiciatis sunt labore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ab explicabo sequi tenetur nulla nihil modi enim inventore ea sit, a temporibus ut saepe earum ipsa! Tempore odio veritatis voluptas?.
+                    </p>
+    </div>
+    <script>
+        function wheelHandler(){
+            let element = document.getElementById("txt")
+
+            document.getElementById("output").innerHTML = element.scrollTop +"px"
+        }
+    </script>
+</body>
+</html>

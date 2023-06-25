@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-EVENT</title>
+    <style>
+        body{
+            width: 100% auto;
+            height:100vh;
+            background-color: #ccc;
+        }
+        .blk{
+            width: 50%;
+            background-color: crimson;
+            color: #ccc;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    
+</body oncontextmenu="contextHandler(event)">
+    <h3>oncontextmenu()</h3>
+    <div class="blk" id="blk">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, commodi voluptas porro dignissimos neque possimus dolorum reiciendis magnam autem cumque at repellat quae excepturi quo voluptatem vel saepe. Aspernatur, a Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo doloribus voluptatem nam illo accusantium incidunt amet eius, illum labore necessitatibus iste consequuntur in voluptates blanditiis sint eligendi atque. Sit.lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde nemo vitae necessitatibus eveniet minima, dolores consequatur aliquam obcaecati enim odio eaque magni reprehenderit veniam. Aliquam rerum vero voluptatum excepturi illo?. </p>
+    </div>
+
+    <script>
+        function contextHandler(event){
+            event.preventDefault();  /*Avoid page refresh*/
+            alert("Right click has disabled")
+        }
+    </script>
+</html>
