@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions</h1>
+
+    <script>
+        // function name format
+        // getname, getName, get_name, get_my_name, get_Name
+
+        // get-name -> do not use such format
+
+        // function name(parameter) {
+            // block of code to be exectued
+        // }
+        // name(value);  -> this is called function calling(DIRECT CALL)
+
+        // calling a function types:
+        // 1. Direct calling: Call by Value (JavaScript applicable)
+        // 2. Indirect calling : Call by reference (not applicable in JS)(Applicable in JAVA, C++)
+
+        var x = 123;
+
+        function display (name) {
+            document.write(`<h2> Welcome to Function = ${name} </h2>`);
+        }
+        display("JS");
+        display(); // undefined 
+        display("");  //empty value
+        display(null);  //null
+
+        function product(x,y){
+            document.write(`<h2> Product = ${x*y} </h2>`);
+        }
+        product(2,5);
+
+        function exp1 (a, b) {
+            let res = ((a*a)+(b*b));
+            document.write(`<h2> result = ${ res } </h2>`);
+        }
+        exp1(2,3)
+    </script>
+</body>
+</html>

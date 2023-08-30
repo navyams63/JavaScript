@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Write some content inside input and then select and copy it.</h3>
+    </center>
+    <hr>
+
+    <!-- 
+        copy => ctrl+c 
+        paste => ctrl+v
+        cut =>ctrl+x
+     -->
+
+     <form action="">
+        <label for="">Enter some content</label>
+        <input type="text" name="first" id="first" onselect="sel()" oncopy="copy(0)">
+        <br><br>
+
+        <textarea name="" id="" cols="30" rows="10" onpaste="paste()" oncut="cut()"></textarea>
+     </form>
+
+     <script>
+        function sel() {
+            alert("Content has been selected");
+        }
+        function copy() {
+            alert("Content has been Copied");
+        }
+        function paste() {
+            alert("Content has been pasted")
+        }
+        function cut() {
+            alert("Content has been Cut")
+        }
+     </script>
+</body>
+</html>

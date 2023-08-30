@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Parameterised Constructor (makes constructor re-usable )</h2>
+    </center>
+    <hr>
+
+    <script>
+        function Course (ti, da, fe) {
+            this.title = ti;
+            this.fee = fe;
+            this.duration = da;
+        };
+
+        //instance
+        let x1 = new Course ('JavaScript', '1month', 1234);
+
+        console.log('x1 =', x1);
+
+        document.write(`<h3> title = ${x1.title} </h3>`);
+        document.write(`<h3> Fee = ${x1.fee} </h3>`);
+        document.write(`<h3>Duration = ${x1.duration} </h3>`);
+
+        // instance
+        let x2 = new Course ('React', '3.1month', 987);
+
+        console.log('x2 =', x2);
+
+        document.write(`<h3> title = ${x2.title} </h3>`);
+        document.write(`<h3> Fee = ${x2.fee} </h3>`);
+        document.write(`<h3>Duration = ${x2.duration} </h3>`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Static Methods</h2>
+    </center>
+    <hr>
+
+    <script>
+        class Person {
+            //properties and methods
+            constructor() {
+                document.write('hi im a constructor');
+                this.name = "Mahesh";
+            }
+
+            static getName (na){
+                // this pointer is inactive inside the static methods
+                document.write('<h3> hi' + this.name + 'welcome to JS </h3>');
+                // document.write('<h3> hi' + na + 'welcome to JS </h3>');
+            }
+        }
+        //classname.methodname
+        Person.getName("Raju");
+    </script>
+</body>
+</html>

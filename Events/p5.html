@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt{
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>onmousewheel() and onscroll()</h3>
+    </center>
+    <hr>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum nostrum saepe facilis, consectetur dolorem sequi veniam consequatur suscipit! Quia illum id nisi debitis doloremque aut praesentium corrupti saepe? Ab, architecto.
+        Quos repellat eveniet nobis, culpa consequatur magni laborum voluptas dolor saepe consequuntur vitae laudantium distinctio tenetur facilis! Quam porro ratione doloribus fugit numquam voluptas fugiat mollitia! Possimus placeat illum veniam!
+        Tenetur repudiandae, nam accusamus dolor cupiditate aut in sequi! Fugit voluptate, ut obcaecati officia necessitatibus quis quia expedita. Minus laudantium vel iure quod tempora consectetur repellat facilis laborum dolor? Necessitatibus.
+        Quas voluptate dicta doloremque maiores molestias assumenda sapiente id eos vitae eaque, reiciendis tempora illum! Quia exercitationem asperiores, delectus tempore tempora fuga, corporis fugit nesciunt a impedit fugiat sunt. Alias?
+        Sint, dolor cum. Voluptates inventore esse laborum nesciunt nobis repudiandae harum at voluptatem, nam, minima corrupti, quod iure laboriosam officia iusto non ad cumque vero qui amet vitae? Nemo, dicta.
+        Suscipit corrupti est eum placeat dolorem laborum quam deleniti voluptatum soluta velit, tempore aspernatur totam laboriosam rerum enim nisi voluptatem reprehenderit perferendis pariatur ipsam iure similique, veritatis, repudiandae quos! Rem.
+        Quaerat nisi ullam voluptas, maiores numquam hic ea debitis ex omnis dolore veritatis. Earum consequuntur inventore accusamus doloribus, animi iusto incidunt impedit consequatur qui magni, soluta totam cupiditate alias doloremque!
+        Earum, soluta id unde et fugit adipisci iste odit porro, asperiores sunt facere cumque autem explicabo velit ad voluptatum esse quisquam nobis iusto saepe provident? Et ea tenetur necessitatibus rerum.
+        Ab dolore eum neque voluptatem animi maiores officia voluptate explicabo! Quam excepturi vel magnam similique! Consectetur, id vel iusto reiciendis amet dolores magni. Velit autem facilis voluptatibus, consequatur totam odit?
+        Soluta quaerat exercitationem tenetur repudiandae deleniti expedita repellendus eaque suscipit, dolor consequuntur laborum laudantium porro rerum similique ad quasi asperiores odit ea. Iure iusto deserunt, corporis minima possimus reprehenderit animi.
+        Eligendi blanditiis, sint sequi voluptate enim cum quo maiores expedita est iusto repellendus illum at accusantium. Laboriosam provident, illum aperiam reprehenderit dolore quaerat magnam accusamus blanditiis repellat nesciunt, assumenda iure.
+        Alias perspiciatis assumenda excepturi sint dolore omnis unde doloribus, fuga consectetur vel quas, officia quibusdam itaque sapiente ullam? Nihil libero tenetur tempore laudantium! Vitae, doloremque. Ad alias saepe tempora voluptatum.
+        Delectus id voluptatibus ipsum iure nam magnam quas expedita praesentium, culpa provident, non sint beatae ad aspernatur soluta. Aut esse tenetur quibusdam odio modi exercitationem repellat debitis cupiditate, iste omnis?
+        Nulla porro consequatur incidunt laudantium sit, harum sequi repudiandae nisi cum doloribus veritatis mollitia accusantium tempora dolores odit facilis, consectetur quos quo nemo modi, repellendus reprehenderit! Accusamus ex eos a.
+        Repellendus repellat dicta nobis tenetur ex optio excepturi sed similique quas velit cum veritatis magni, ratione, laboriosam aspernatur iste ullam quisquam facere, neque at nesciunt dolorum omnis eius! Optio, facilis?
+        Similique recusandae, iusto maxime, nulla consequatur ullam amet minima a aliquid, ipsum inventore dolorum numquam ducimus. A laborum corrupti repellat voluptatem magnam eaque tempora, rem dolorem impedit sapiente aliquid numquam?
+        Adipisci veniam qui omnis quaerat excepturi eveniet esse maxime nihil dolor. Ex, itaque eius soluta architecto minus, nulla consectetur aut accusantium vitae odit nihil consequuntur mollitia corporis quis hic in!
+        Placeat assumenda praesentium voluptates molestiae modi quidem libero laboriosam nulla, provident consequuntur veritatis nam aperiam distinctio ad consectetur magni, doloremque ratione tenetur sunt molestias alias unde quia? Enim, sequi dolorem.
+        Earum quisquam atque impedit provident itaque, iure maiores pariatur, facere doloribus, deleniti suscipit est harum tempora ab. Est provident quisquam ipsam laudantium, sequi, nam id magni perspiciatis error facilis fugit.
+        Accusantium voluptate laborum, labore temporibus dolorum unde aliquid consectetur eius ipsam expedita eveniet dignissimos non iusto placeat reiciendis saepe odio dolore enim consequatur libero eos? Vitae dolor ea dolorem accusamus.</p>
+    </div>
+
+    <script>
+        function wheelHandler() {
+            var pos = document.getElementById("txt");
+            document.getElementById("output").innerText = pos.scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

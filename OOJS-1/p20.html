@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Object to Array Conversion</h2>
+    </center>
+    <hr>
+
+    <script>
+        var user = {
+            name : "John",
+            email: "john@gmail.com",
+            age : 25
+        };
+
+        var res = Object.keys(user).map(function(key) {
+            return user[key];
+        });
+        console.log('res = ', res);
+
+    </script>
+</body>
+</html>

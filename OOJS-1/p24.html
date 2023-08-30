@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2> CLass ES-6 -> group of Objects (State and Behaviour) </h2>
+        <p>State => variables -> properties </p>
+        <p>Behaviour -> Methods</p>
+    </center>
+    <hr>
+
+    <script>
+        class User {
+            // built in method
+            constructor() {
+                // Property => stataes
+                this.name = "Mohan";
+                this.email = "mohan2gmail.com";
+                document.write(`<h3> Constructor Method </h3>`);
+            }
+            display () {
+                // method => behaviour
+                document.write(`<h3> Name is ${this.name} </h3>`);
+            }
+
+            print(){
+                document.write(`<h3> email is ${this.email} </h3>`);
+            }
+        }
+
+        let x = new User();
+        console.log('x =', x);
+
+        document.write(`<h3> name = ${x.name} </h3>`);
+        document.write(`<h3> email = ${x.email} </h3>`);
+
+        document.write("<hr>");
+
+        x.display();
+        x.print();
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Object created with new keyword</h2>
+    </center>
+    <hr>
+
+    <script>
+        var x = new Object();  // x -> instance of an Object()
+
+        x.name = "John";
+        x.age = 25;
+        x.email = "john@gmail.com";
+
+        x.getName = function () {
+            document.write(`<h3> My name is = ${this.name}</h3>`)
+        }
+
+        console.log(' x =',x);
+        
+        document.write(`<h3>name = ${x.name} </h3>`);
+        document.write(`<h3>age = ${x.age} </h3>`);
+        document.write(`<h3>email = ${x['email']} </h3>`);
+        x.getName();
+
+    </script>
+</body>
+</html>

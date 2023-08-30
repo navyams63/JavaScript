@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Keyboard Events</h3>
+    </center>
+    <hr>
+
+    <!-- 
+        Events
+            onkeypress => deprecated
+            onkeydown => will have one key of delay
+            onkeyup => no Delay
+     -->
+
+     <form action="">
+        <label for="">Enter Name</label>
+        <input type="text" name="name" id="name" onkeydown="getName()">
+     </form>
+
+     <h3 id="output"></h3>
+
+     <script>
+        //Event Handler
+
+        function getName() {
+            var myName = document.getElementById("name");
+            document.getElementById("output")
+        }
+     </script>
+</body>
+</html>

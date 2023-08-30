@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Array Methods -> Filter Method</h3>
+    </center>
+    <hr>
+
+    <script>
+        var user = [
+            {
+                id: 1,
+                first: "Raju",
+                last: "Kumar",
+                email: "raju@gmail.com",
+            },
+            {
+                id: 2,
+                first: "John",
+                last: "Mathew",
+                email: "john@gmail.com",
+            },
+            {
+                id: 3,
+                first: "Raju",
+                last: "Sharma",
+                email: "raju123@gmail.com",
+            },
+            {
+                id: 4,
+                first: "Chand",
+                last: "Sharma",
+                email: "chand56@gmail.com",
+            },
+        ];
+
+        console.log('output1 = ', user);
+
+        // array.filter -> output is is array format
+        var user1 = user.filter(function(item) {
+            return item.first === "Raju";
+        });
+        console.log("output2 = ", user1);
+
+        var user11 = user.filter(function(item){
+            return item.last === "Sharma";
+        });
+        console.log('output11 = ', user11)
+
+        // array.find is in Object format 
+        var user2 = user.find(function(item){
+            return item.id === 3;
+        });
+        console.log('output3 = ', user2);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

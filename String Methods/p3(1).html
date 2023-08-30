@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>String Methods ( SLice, substr, concat, trim)</h3>
+    </center>
+    <hr>
+
+    <script>
+        var str = "0123456789";
+
+        document.write(`<h3> Given String = ${ str} </h3>`)
+
+        // slice(start-index , end-index)
+        document.write(`<h3> Slice(start-index , end-index) Method</h3>`)
+        document.write(`<h3> ${ str.slice(2,5)}</h3>`)
+
+        // sub.str(start-index , legth ) Method
+        document.write(`<h3> ${ str.substr(2,5)} </h3>`)
+        document.write(`<h3> ${str.substr(7,2)} </h3>`)
+
+        document.write(`<hr`);
+
+        // 10 + 2 = 12  // number = add;
+        // "10" + 2 = 102 // string = concat (join)
+        
+        document.write(`<h3> Concat</h3>`)
+        var a = "Raj";
+        var b = "Kumar";
+
+        document.write(`<h3> concat = ${ a.concat(b) } </h3>`);
+
+        // Trim
+        var e = b.trim();  /* trim the white spaces if any*/
+        document.write(`<h3> Concat with trim = ${ a.concat(e) } </h3>`)
+        document.write(`<h3> Concat with trim = ${ a.concat(b.trim()) } </h3>`)
+
+
+
+    </script>
+</body>
+</html>

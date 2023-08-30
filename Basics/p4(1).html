@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>Contional Statements(if else..if else)</h3>
+    </center>
+    <hr>
+
+    <script>
+        var x = prompt("Enter the value")  /* window objects /BOM ->browser object modal*/
+        var a = Number(x);  /*Used to convert any type to number*/
+
+        if(a === 123){
+            document.write(`<h3> ${a} is equal to 123 </h3>`)
+        }else if( a > 123 ){
+            document.write(`<h3> ${a} is greater than 123 </h3>`)
+        }else if( a < 123 ){
+            document.write(`<h3> ${a} is less than 123 </h3>`)
+        }else{
+            document.write(`<h3> Check your Input </h3>`) // If the input is other than number
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Object methods = defineProperties()</h2>
+    </center>
+    <hr>
+
+    <script>
+        var user = {
+            name : "Raju"
+        };
+
+        console.log('before define = ', user);
+
+        Object.defineProperties(user, {
+            email: {
+                value : "raju@gmail.com"
+                },
+            mobile: {
+                value: "845662244"
+                },
+            age: {
+                value:22
+            }
+        });
+
+        console.log('after define =', user);
+
+        document.write(`<h3> name = ${user.name} </h3>`)
+        document.write(`<h3> email = ${user.email} </h3>`)
+        document.write(`<h3> mobile = ${user.mobile} </h3>`)
+        document.write(`<h3> age = ${user["age"]}</h3>`)
+    </script>
+</body>
+</html>

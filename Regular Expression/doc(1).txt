@@ -1,0 +1,30 @@
+Rules of Regular expressions
+
+
+^ -> defines the beginning of the pattern
+
+$ -> defines the ending of the pattern
+
+[] -> Character set
+
+() -> capturing group that group of multiple characters
+
+[abcdef] -> matches any single occurance of any of the characters a,b,c,d,e,f
+
+[a-z] -> matches any single lowercase  letter 
+
+[A-Z] -> matches any single uppercase letter
+
+[a-zA-Z] -> matches any single letter from a-z ignoring the case
+
+. -> matches any character except line break /n
+
+? -> matches 0 and 1 occurances of the preceding character, set or group
+
+* -> matches 0 and more occurances of the preceding character, set or group
+
++ -> matches 1 and more occurances of the preceding character, set or group
+
+{n} -> matches exactly n occurances of the preceding character, set or group
+
+{n,m} -> matches exactly n or m occurances of the preceding character, set or group

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Object property destructure using loop</h2>
+    </center>
+    <hr>
+
+    <script>
+        const user = {
+            name: "Raj",
+            email: "raj@gmail.com",
+            mobile: "998877665",
+            age: 25
+        };
+
+        // for ... in
+        for (let item in user) {
+            document.write(`<h3> ${item} : ${user[item]}</h3>`);
+            // document.write(`<h3> ${item} : ${user.item}</h3>`);  // The iteration should be in string, which is not seen in 'user.item', so use []
+            console.log(item);
+
+        }
+    </script>
+</body>
+</html>

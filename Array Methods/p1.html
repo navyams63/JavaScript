@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h3>push() and pop()</h3>
+    </center>
+    <!--
+        push(val) => add new item at ending position
+        pop(val) => remove item from end
+      -->
+    <hr>
+
+    <script>
+        var x = ["blue", "white"];
+        document.write(`<h3> before push = ${ x } </h3>`)
+        x.push("pink")
+        document.write(`<h3> after push = ${ x }</h3>`)
+        x.push("yellow")
+        document.write(`<h3> after push = ${ x }</h3>`)
+
+        x.pop();
+        document.write(`<h3> after pop = ${ x } </h3>`)
+        x.pop()
+        document.write(`<h3> after pop = ${ x } </h3>`)
+        x.pop()
+        document.write(`<h3> after pop = ${ x } </h3>`)
+    </script>
+
+</body>
+</html>
